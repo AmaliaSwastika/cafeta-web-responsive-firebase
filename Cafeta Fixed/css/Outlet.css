@@ -1,0 +1,277 @@
+button {
+  background-color:#675D50;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+button a:hover{
+  color: white; /* warna tulisan hyperlink saat hover */
+}
+
+/* NAVBAR */
+header {
+  position: absolute;
+  background: #675D50;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+header .logo {
+  color: #F3DEBA;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  float: left;
+  font-weight: bold;
+  margin-top: -13px;
+  cursor: pointer;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  color: #F3DEBA;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px;
+  text-decoration: none;
+  display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: #F3DEBA;
+  background-color: #A9907E;
+}
+
+.menu-toggle {
+  color: #F3DEBA;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+#he{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.text-overlay {
+  
+ 
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+
+  font-weight: bold;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+/* FOOTER */
+.footer{
+	background-color: #24262b;
+    padding: 10px 0;
+}
+
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 200px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+.container2 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+@media (max-width: 650px) {
+  /*NAVBAR*/
+  header {
+      padding: 0 30px;
+  }
+  
+  .menu-toggle {
+      display: block;
+  }
+  
+  header nav {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 50px);
+      background: #675D50;
+      top: 50px;
+      left: -100%;
+      transition: 0.5s all;
+  }
+  
+  header nav.active {
+      left: 0;
+  }
+  
+  header nav ul {
+      display: block;
+      text-align: center;
+  }
+  
+  header nav ul li a {
+      border-bottom: 0px solid #A9907E;
+      color: #F3DEBA;
+  }
+
+
+  .text-overlay {
+    margin-top: 20px;
+    position: absolute;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 12px;
+    margin-right: 20px;    
+      
+  }
+
+   #he {
+      width: 100%;
+      margin-top: 200px;
+      height: auto;
+      position: relative;
+      max-width: 768px; /* sesuaikan dengan ukuran layar */
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+}
+
+/*FOOTER*/
+@media(max-width: 767px){
+  .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+    }
+    #he {
+      width: 100%;
+      margin-top: 200px;
+      height: auto;
+      position: relative;
+      max-width: 768px; /* sesuaikan dengan ukuran layar */
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .text-overlay {
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 20px;
+      
+  }
+}
+
+@media(max-width: 574px){
+  .footer-col{
+      width: 100%;
+    }
+    
+}
+
+
+@media only screen and (max-width: 817px) {
+  /* For tablets: */
+  .col-sm-6 {
+      width: 50%;
+      text-align: center;
+  }
+  .col-sm-12 {
+      width: 100%;
+      text-align: center;
+  }
+  .home-img {
+      width: 100%;
+  }
+  .home-text {
+      margin-top: 40%;
+  }
+}
